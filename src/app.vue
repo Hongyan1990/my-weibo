@@ -38,7 +38,7 @@
 		background: #f2f6fc;
 	}
 	.main {
-		width: 90%;
+		width: 80%;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     margin-top: 20px;
