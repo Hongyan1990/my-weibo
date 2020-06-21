@@ -10,11 +10,11 @@
 						<div class="guan-zhu">
 							<p>
 								<el-avatar style="background: #fff" :size="30" :src="gzUrl"></el-avatar>
-								<a href="#">我的关注</a>
+								<span class="my-btn" @click="showMyAttention">我的关注</span>
 							</p>
 							<p>
 								<el-avatar style="background: #fff" :size="30" :src="fansUrl"></el-avatar>
-								<a href="#">我的粉丝</a>
+								<span class="my-btn" @click="showMyFans">我的粉丝</span>
 							</p>
 						</div>
 					</div>
@@ -69,10 +69,18 @@
 			}
 		},
 		methods: {
+			showMyAttention() {
 
+			},
+			showMyFans() {
+
+			},
+			showAllUsers() {
+
+			}
 		},
 		mounted () {
-
+			this.showAllUsers()
 		}
 	}
 </script>
@@ -118,6 +126,12 @@
 	.guzhu-btn {
 		font-size: 12px;
 		font-weight: 777;
+		cursor: pointer;
+	}
+	.my-btn {
+		font-size: 14px;
+		color: #555;
+		margin-left: 10px;
 		cursor: pointer;
 	}
 </style>
